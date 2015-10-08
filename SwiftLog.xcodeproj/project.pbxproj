@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A07220CE1BC5DB9A00CD4314 /* SwiftLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A07220CD1BC5DB9A00CD4314 /* SwiftLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A07220D91BC5DBD900CD4314 /* NSString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07220D61BC5DBD900CD4314 /* NSString+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		A07220DA1BC5DBD900CD4314 /* SwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07220D71BC5DBD900CD4314 /* SwiftLog.swift */; settings = {ASSET_TAGS = (); }; };
+		A07220DB1BC5DBD900CD4314 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07220D81BC5DBD900CD4314 /* Utilities.swift */; settings = {ASSET_TAGS = (); }; };
+		A07220DD1BC5DD6400CD4314 /* SSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07220DC1BC5DD6400CD4314 /* SSLog.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A07220CA1BC5DB9A00CD4314 /* SwiftLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07220CD1BC5DB9A00CD4314 /* SwiftLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLog.h; sourceTree = "<group>"; };
 		A07220CF1BC5DB9A00CD4314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07220D61BC5DBD900CD4314 /* NSString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Extensions.swift"; sourceTree = "<group>"; };
+		A07220D71BC5DBD900CD4314 /* SwiftLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLog.swift; sourceTree = "<group>"; };
+		A07220D81BC5DBD900CD4314 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A07220DC1BC5DD6400CD4314 /* SSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,22 @@
 		A07220CC1BC5DB9A00CD4314 /* SwiftLog */ = {
 			isa = PBXGroup;
 			children = (
+				A07220D51BC5DBD900CD4314 /* Classes */,
 				A07220CD1BC5DB9A00CD4314 /* SwiftLog.h */,
 				A07220CF1BC5DB9A00CD4314 /* Info.plist */,
 			);
 			path = SwiftLog;
+			sourceTree = "<group>";
+		};
+		A07220D51BC5DBD900CD4314 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A07220D61BC5DBD900CD4314 /* NSString+Extensions.swift */,
+				A07220D71BC5DBD900CD4314 /* SwiftLog.swift */,
+				A07220D81BC5DBD900CD4314 /* Utilities.swift */,
+				A07220DC1BC5DD6400CD4314 /* SSLog.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07220DB1BC5DBD900CD4314 /* Utilities.swift in Sources */,
+				A07220DA1BC5DBD900CD4314 /* SwiftLog.swift in Sources */,
+				A07220D91BC5DBD900CD4314 /* NSString+Extensions.swift in Sources */,
+				A07220DD1BC5DD6400CD4314 /* SSLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +258,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aii.SwiftLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -250,6 +275,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aii.SwiftLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
