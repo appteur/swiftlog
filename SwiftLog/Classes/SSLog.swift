@@ -11,7 +11,7 @@ import UIKit
 
 public func DebugLog(formatString:String, args:[CVarArgType])
 {
-    SwiftLog.sharedInstance.log("SWLog", printDate: true, function: __FUNCTION__, line: __LINE__, formatString:formatString, args: args)
+    SwiftLog.sharedInstance.log("SWLog", printDate: true, function: #function, line: #line, formatString:formatString, args: args)
 }
 
 public func DebugLogWhereAmI()
@@ -21,7 +21,7 @@ public func DebugLogWhereAmI()
 
 public func StrippedLog(formatString:String, args:[CVarArgType])
 {
-    SwiftLog.sharedInstance.log("SWLog", printDate: false, function: __FUNCTION__, line: __LINE__, formatString:formatString, args: args)
+    SwiftLog.sharedInstance.log("SWLog", printDate: false, function: #function, line: #line, formatString:formatString, args: args)
 }
 
 public func BareLog(formatString:String, args:[CVarArgType])
