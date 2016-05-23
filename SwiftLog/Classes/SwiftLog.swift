@@ -12,6 +12,8 @@ public class SwiftLog
 {
     static let sharedInstance = SwiftLog()
     
+    var isLogEnabled:Bool = true
+    
     var shouldLogToFile:Bool = false
     var shouldLogSynchronously:Bool = true
     
@@ -42,6 +44,11 @@ public class SwiftLog
         self.dateFormatter?.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
         
         self.setupLogFileHandle()
+    }
+    
+    public class func setLoggingEnabled(isEnabled:Bool)
+    {
+        SwiftLog.sharedInstance.isLogEnabled = isEnabled
     }
     
     public class func setLoggingWhitelist(list:Array<String>)

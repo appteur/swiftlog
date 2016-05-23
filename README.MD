@@ -17,3 +17,4 @@ It also offers the following features:
 - Set blacklists - do not show logs with text in blacklist
 - Write logs to files
 - Log asynchronously
+- Enable/Disable logging (for debug/release builds)
